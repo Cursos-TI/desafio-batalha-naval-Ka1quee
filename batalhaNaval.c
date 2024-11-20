@@ -1,40 +1,30 @@
-#include <stdio.h>
-
-// Desafio Batalha Naval - MateCheck
-// Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
-// Siga os comentários para implementar cada parte do desafio.
-//
 int main() {
-    // Nível Novato - Posicionamento dos Navios
-    // Sugestão: Declare uma matriz bidimensional para representar o tabuleiro (Ex: int tabuleiro[5][5];).
-    // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
-    // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
+    // Definindo as coordenadas dos navios
+    int navio1X = 1, navio1Y = 1;  // Coordenadas do navio 1
+    int navio2X = 2, navio2Y = 2;  // Coordenadas do navio 2
 
-    // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
-    // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
-    // Sugestão: Exiba o tabuleiro completo no console, mostrando 0 para posições vazias e 3 para posições ocupadas.
+    // Criando o tabuleiro 3x3 (com valores apenas para ilustrar)
+    int tabuleiro[3][3] = {
+        {0, 0, 0},
+        {0, 0, 0},
+        {0, 0, 0}
+    };
 
-    // Nível Mestre - Habilidades Especiais com Matrizes
-    // Sugestão: Crie matrizes para representar habilidades especiais como cone, cruz, e octaedro.
-    // Sugestão: Utilize estruturas de repetição aninhadas para preencher as áreas afetadas por essas habilidades no tabuleiro.
-    // Sugestão: Exiba o tabuleiro com as áreas afetadas, utilizando 0 para áreas não afetadas e 1 para áreas atingidas.
+    // Pedindo as coordenadas do navio 1 ao jogador
+    printf("Digite a coordenada X do navio 1 (0, 1 ou 2): ");
+    scanf("%d", &navio1X);
+    printf("Digite a coordenada Y do navio 1 (0, 1 ou 2): ");
+    scanf("%d", &navio1Y);
 
-    // Exemplos de exibição das habilidades:
-    // Exemplo para habilidade em cone:
-    // 0 0 1 0 0
-    // 0 1 1 1 0
-    // 1 1 1 1 1
-    
-    // Exemplo para habilidade em octaedro:
-    // 0 0 1 0 0
-    // 0 1 1 1 0
-    // 0 0 1 0 0
+    // Pedindo as coordenadas do navio 2 ao jogador
+    printf("Digite a coordenada X do navio 2 (0, 1 ou 2): ");
+    scanf("%d", &navio2X);
+    printf("Digite a coordenada Y do navio 2 (0, 1 ou 2): ");
+    scanf("%d", &navio2Y);
 
-    // Exemplo para habilidade em cruz:
-    // 0 0 1 0 0
-    // 1 1 1 1 1
-    // 0 0 1 0 0
+    // Exibindo as coordenadas inseridas
+    printf("Coordenadas do navio 1: (%d, %d)\n", navio1X, navio1Y);
+    printf("Coordenadas do navio 2: (%d, %d)\n", navio2X, navio2Y);
 
     return 0;
 }
